@@ -267,24 +267,11 @@ function Home({t, go, lang}) {
           <div className="hero-buttons"><button className="button button-gold" onClick={() => go('contact')}>{t.contact}<ArrowUpRight size={17}/></button><button className="button button-outline" onClick={() => go('services')}>{t.explore}<ArrowRight size={17}/></button></div>
           <div className="hero-meta"><span><ShieldCheck size={16}/>{t.bar}</span><span><MapPin size={16}/>{t.location}</span></div>
         </div>
-        <div className="hero-art" aria-label="Portrait of Advocate Obaidullah Faruq (Sawgat)">
-          <div className="art-orbit orbit-one"></div>
-          <div className="art-orbit orbit-two"></div>
-          <div className="hero-portrait-frame">
-            <div className="hero-portrait-inner">
-              <img
-                src="/images/Lawyer%20Sawgat.png"
-                alt="Advocate Obaidullah Faruq (Sawgat)"
-                className="hero-portrait"
-                fetchPriority="high"
-              />
-            </div>
-            <div className="art-corner corner-tl"></div>
-            <div className="art-corner corner-br"></div>
-          </div>
+        <div className="hero-art" aria-label="Decorative legal scales illustration">
+          <div className="art-orbit orbit-one"></div><div className="art-orbit orbit-two"></div>
+          <div className="art-frame"><div className="art-corner corner-tl"></div><div className="art-corner corner-br"></div><Scale className="scale-icon" strokeWidth={0.75}/><div className="art-caption"><span>OFS</span><small>LAW · INTEGRITY · SERVICE</small></div></div>
           <div className="art-seal"><span>OFS</span><small>ADVOCATE</small></div>
-          <div className="art-star star-a">✳</div>
-          <div className="art-star star-b">✧</div>
+          <div className="art-star star-a">✳</div><div className="art-star star-b">✧</div>
         </div>
       </div>
       <div className="hero-bottom container"><span>01 / 04</span><span className="hero-bottom-line"></span><span>LEGAL PROFESSIONAL · BANGLADESH</span></div>
