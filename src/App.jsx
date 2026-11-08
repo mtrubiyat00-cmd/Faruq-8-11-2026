@@ -1,3 +1,4 @@
+
 function Biography({t, go}) {
   return (
     <>
