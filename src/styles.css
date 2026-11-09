@@ -5,7 +5,6 @@
 @media(max-width:700px){.container{width:min(100% - 36px,560px)}.topline-right{gap:12px}.top-email{display:none!important}.header-inner{height:72px}.brand-mark{width:42px;height:42px}.brand-copy strong{font-size:12px}.main-nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:18px 22px 22px;box-shadow:0 15px 25px rgba(10,20,35,.08);flex-direction:column;align-items:stretch;gap:9px}.main-nav.open{display:flex}.nav-link{padding:12px 4px;text-align:left}.nav-contact{justify-content:center;margin-top:6px}.menu-toggle{display:block}.header-actions{gap:12px}.hero{min-height:auto}.hero-grid{grid-template-columns:1fr;padding-top:65px;padding-bottom:90px}.hero h1{font-size:43px}.hero-intro{font-size:18px}.hero-art{height:340px;transform:scale(.83);margin-top:-5px}.hero-bottom{width:calc(100% - 36px);font-size:8px}.stats-grid{grid-template-columns:1fr;gap:0;padding:12px 0}.stat,.stat:first-child{padding:15px 4px;border-right:0;border-bottom:1px solid #ded8cc}.stat:last-child{border-bottom:0}.two-column{grid-template-columns:1fr;gap:25px}.section{padding:65px 0}.section-heading{display:block}.section-heading>p{margin-top:17px}.service-grid{grid-template-columns:1fr}.service-card{min-height:245px}.cta-inner{display:block}.cta-inner .button{margin-top:25px}.page-hero{padding:60px 0}.page-hero h1{font-size:43px}.bio-layout,.contact-grid{grid-template-columns:1fr}.bio-aside{min-height:270px}.bio-monogram{font-size:65px}.credential-grid{grid-template-columns:1fr}.bio-facts div{grid-template-columns:105px 1fr}.contact-form{padding:24px 19px}.footer-main{grid-template-columns:1fr;gap:24px}.footer-links{gap:17px}.footer-social{grid-column:auto}.footer-bottom{display:block;line-height:1.8}.footer-bottom div{margin-top:8px}.topline-inner{min-height:32px}.topline{font-size:10px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
-
 /* REAL PORTRAITS: HOME + BIOGRAPHY */
 .hero-art {
   height: 500px;
@@ -106,8 +105,7 @@
   .bio-aside { width: min(100%, 420px); margin: 0 auto; }
 }
 
-
-/* DETAILED SERVICES PAGE */
+/* DETAILED SERVICES PAGE - EQUAL HEIGHT & ALIGNED BUTTONS */
 .detailed-services-section {
   background: #faf9f6;
 }
@@ -179,6 +177,7 @@
   line-height: 1.8;
 }
 .detailed-service-list {
+  flex: 1;
   display: grid;
   gap: 13px;
   list-style: none;
@@ -201,6 +200,7 @@
   color: var(--gold2);
 }
 .criminal-contact-note {
+  flex: 1;
   display: flex;
   align-items: flex-start;
   gap: 10px;
