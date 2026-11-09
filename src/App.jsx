@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {
   ArrowRight, ArrowUpRight, Scale, Menu, X, Phone, Mail, MapPin,
   MessageCircle, GraduationCap, Landmark, ShieldCheck, BookOpen,
-  Clock3, Globe2, ChevronRight, Send, CheckCircle2
+  Clock3, Globe2, ChevronRight, Send, CheckCircle2, Users, Gavel, FileText
 } from 'lucide-react';
 
 const EMAIL = 'advswagat@gmail.com';
@@ -38,7 +38,15 @@ const copy = {
     associationSub: 'Professional association',
     servicesEyebrow: 'PRACTICE AREAS',
     servicesTitle: 'Legal services',
-    servicesIntro: 'Explore the practice areas currently offered. For advice on a specific matter, please get in touch to discuss the details and applicable jurisdiction.',
+    servicesIntro: 'Explore the legal services available in family matters, criminal law and legal documentation. Contact the advocate to discuss the facts of your matter and the applicable jurisdiction.',
+    familyServices: ['Child Custody & Guardianship', 'Restitution of Conjugal Rights', 'Family Dispute Resolution'],
+    criminalServicesNote: 'For criminal-law matters, contact the advocate to discuss the nature of the case and the assistance required.',
+    documentation: 'Legal Documentation & Drafting',
+    documentationServices: ['Legal Notice', 'Divorce Notice & Related Documents', 'Plaint & Written Statement', 'Bail Petition & Appeal Petition', 'Affidavit', 'Agreement & Deed Drafting', 'Power of Attorney', 'Compromise Petition & Settlement Deed'],
+    familyServicesDesc: 'Guidance and assistance for family-related legal matters, with attention to the circumstances and interests of those involved.',
+    documentationDesc: 'Preparation and drafting of legal notices, pleadings, petitions, affidavits, agreements and related legal instruments.',
+    criminalServicesTitle: 'Criminal Law',
+    serviceEnquire: 'Enquire about this service',
     family: 'Family Law',
     familyDesc: 'Legal guidance and assistance for family-related matters, approached with care, discretion and respect for the people involved.',
     criminal: 'Criminal Law',
@@ -122,7 +130,15 @@ const copy = {
     associationSub: 'পেশাগত সম্পৃক্ততা',
     servicesEyebrow: 'আইন পেশার ক্ষেত্র',
     servicesTitle: 'আইনি সেবাসমূহ',
-    servicesIntro: 'বর্তমানে প্রদত্ত আইনি সেবার ক্ষেত্রগুলো দেখুন। নির্দিষ্ট বিষয়ে পরামর্শের জন্য বিস্তারিত জানিয়ে যোগাযোগ করুন।',
+    servicesIntro: 'পারিবারিক বিষয়, ফৌজদারি আইন এবং আইনি নথি প্রস্তুত ও খসড়া প্রণয়ন-সংক্রান্ত সেবাগুলো সম্পর্কে জানুন। আপনার বিষয়ের বিবরণ ও প্রযোজ্য এখতিয়ার নিয়ে আলোচনা করতে যোগাযোগ করুন।',
+    familyServices: ['সন্তানের হেফাজত ও অভিভাবকত্ব', 'দাম্পত্য অধিকার পুনরুদ্ধার', 'পারিবারিক বিরোধ নিষ্পত্তি'],
+    criminalServicesNote: 'ফৌজদারি আইনের কোনো বিষয়ে মামলার ধরন ও প্রয়োজনীয় সহায়তা নিয়ে আলোচনা করতে সরাসরি যোগাযোগ করুন।',
+    documentation: 'আইনি নথি প্রস্তুত ও খসড়া প্রণয়ন',
+    documentationServices: ['আইনি নোটিশ', 'বিবাহবিচ্ছেদের নোটিশ ও সংশ্লিষ্ট নথিপত্র', 'আরজি ও লিখিত জবাব', 'জামিন আবেদন ও আপিল আবেদন', 'হলফনামা', 'চুক্তিপত্র ও দলিল খসড়া', 'পাওয়ার অব অ্যাটর্নি', 'আপস আবেদন ও মীমাংসা দলিল'],
+    familyServicesDesc: 'সংশ্লিষ্ট ব্যক্তিদের পরিস্থিতি ও স্বার্থ বিবেচনায় পারিবারিক আইন-সংক্রান্ত বিষয়ে দিকনির্দেশনা ও সহায়তা।',
+    documentationDesc: 'আইনি নোটিশ, আরজি, আবেদন, হলফনামা, চুক্তিপত্র এবং সংশ্লিষ্ট আইনি দলিল প্রস্তুত ও খসড়া প্রণয়ন।',
+    criminalServicesTitle: 'ফৌজদারি আইন',
+    serviceEnquire: 'এই সেবা সম্পর্কে জানতে যোগাযোগ করুন',
     family: 'পারিবারিক আইন',
     familyDesc: 'পারিবারিক বিষয়ের আইনি দিকনির্দেশনা ও সহায়তা—যত্ন, গোপনীয়তা এবং সংশ্লিষ্ট ব্যক্তিদের প্রতি সম্মান বজায় রেখে।',
     criminal: 'ফৌজদারি আইন',
@@ -351,7 +367,69 @@ function Biography({t, go}) {
 }
 
 function Services({t, go}) {
-  return <><PageHero eyebrow={t.servicesEyebrow} title={t.servicesTitle} intro={t.servicesIntro}/><section className="section"><div className="container"><ServiceCards t={t} go={go}/><div className="jurisdiction-note"><Globe2/><p>{t.globalNote}</p></div></div></section></>;
+  const groups = [
+    {
+      id: 'family',
+      icon: <Users />,
+      title: t.family,
+      description: t.familyServicesDesc,
+      items: t.familyServices
+    },
+    {
+      id: 'criminal',
+      icon: <Gavel />,
+      title: t.criminalServicesTitle,
+      description: t.criminalServicesNote,
+      items: []
+    },
+    {
+      id: 'documentation',
+      icon: <FileText />,
+      title: t.documentation,
+      description: t.documentationDesc,
+      items: t.documentationServices
+    }
+  ];
+
+  return (
+    <>
+      <PageHero eyebrow={t.servicesEyebrow} title={t.servicesTitle} intro={t.servicesIntro} />
+      <section className="section detailed-services-section">
+        <div className="container">
+          <div className="detailed-service-grid">
+            {groups.map((group, index) => (
+              <article className={`detailed-service-card detailed-service-${group.id}`} key={group.id}>
+                <div className="detailed-service-art" aria-hidden="true">
+                  <span className="detailed-service-art-icon">{group.icon}</span>
+                  <span className="detailed-service-art-number">0{index + 1}</span>
+                </div>
+                <div className="detailed-service-content">
+                  <h2>{group.title}</h2>
+                  <p>{group.description}</p>
+                  {group.items.length > 0 ? (
+                    <ul className="detailed-service-list">
+                      {group.items.map((item) => (
+                        <li key={item}><CheckCircle2 aria-hidden="true" /> <span>{item}</span></li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <div className="criminal-contact-note">
+                      <ShieldCheck aria-hidden="true" />
+                      <span>{t.criminalServicesNote}</span>
+                    </div>
+                  )}
+                  <button className="button button-dark detailed-service-button" onClick={() => go('contact')}>
+                    {t.serviceEnquire}<ArrowUpRight size={16}/>
+                  </button>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="jurisdiction-note"><Globe2/><p>{t.globalNote}</p></div>
+        </div>
+      </section>
+    </>
+  );
 }
 
 function Contact({t, lang}) {

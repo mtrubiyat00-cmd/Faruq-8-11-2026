@@ -105,3 +105,144 @@
   .hero-photo-orbit { width: 340px; height: 380px; }
   .bio-aside { width: min(100%, 420px); margin: 0 auto; }
 }
+
+
+/* DETAILED SERVICES PAGE */
+.detailed-services-section {
+  background: #faf9f6;
+}
+.detailed-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+.detailed-service-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e8e2d8;
+  box-shadow: 0 12px 32px rgba(16,28,50,.055);
+}
+.detailed-service-art {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 30px;
+  color: var(--gold2);
+  background:
+    radial-gradient(circle at 78% 25%, rgba(197,164,109,.22), transparent 32%),
+    linear-gradient(135deg, #f5f0e7, #fff 75%);
+  border-bottom: 1px solid #eee8de;
+}
+.detailed-service-art-icon {
+  width: 76px;
+  height: 76px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(169,134,77,.45);
+  background: rgba(255,255,255,.72);
+}
+.detailed-service-art-icon svg {
+  width: 39px;
+  height: 39px;
+  stroke-width: 1.35;
+}
+.detailed-service-art-number {
+  align-self: flex-start;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  letter-spacing: .12em;
+  color: #b9a47f;
+}
+.detailed-service-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 27px 26px 25px;
+}
+.detailed-service-content h2 {
+  margin: 0 0 12px;
+  color: var(--navy);
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.detailed-service-content > p {
+  margin: 0 0 22px;
+  color: #70798a;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.detailed-service-list {
+  display: grid;
+  gap: 13px;
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0;
+}
+.detailed-service-list li {
+  display: grid;
+  grid-template-columns: 18px minmax(0,1fr);
+  gap: 9px;
+  align-items: start;
+  color: #344054;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.detailed-service-list svg {
+  width: 16px;
+  height: 16px;
+  margin-top: 1px;
+  color: var(--gold2);
+}
+.criminal-contact-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 0 28px;
+  padding: 15px;
+  background: #f7f4ed;
+  color: #596477;
+  font-size: 12px;
+  line-height: 1.75;
+}
+.criminal-contact-note svg {
+  flex: none;
+  width: 18px;
+  color: var(--gold2);
+}
+.detailed-service-button {
+  width: 100%;
+  margin-top: auto;
+}
+.bengali .detailed-service-content h2 {
+  font-family: 'Noto Serif Bengali', serif;
+  line-height: 1.55;
+}
+.bengali .detailed-service-content > p,
+.bengali .detailed-service-list li,
+.bengali .criminal-contact-note {
+  line-height: 2;
+}
+@media(max-width: 950px) {
+  .detailed-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media(max-width: 700px) {
+  .detailed-service-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .detailed-service-art {
+    min-height: 120px;
+  }
+  .detailed-service-content {
+    padding: 23px 21px;
+  }
+}
