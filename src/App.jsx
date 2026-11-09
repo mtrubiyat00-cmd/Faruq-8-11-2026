@@ -39,18 +39,48 @@ const copy = {
     servicesEyebrow: 'PRACTICE AREAS',
     servicesTitle: 'Legal services',
     servicesIntro: 'Explore the legal services available in family matters, criminal law and legal documentation. Contact the advocate to discuss the facts of your matter and the applicable jurisdiction.',
-    familyServices: ['Child Custody & Guardianship', 'Restitution of Conjugal Rights', 'Family Dispute Resolution'],
-    criminalServicesNote: 'For criminal-law matters, contact the advocate to discuss the nature of the case and the assistance required.',
+    familyServices: [
+      'Divorce & Separation',
+      'Dower (Denmohor) Claims',
+      'Maintenance & Alimony Claims',
+      'Child Custody & Guardianship',
+      'Domestic Violence & Dowry Matters',
+      'Restitution of Conjugal Rights',
+      'Family Dispute Resolution',
+      'Family Court Cases & Appeals'
+    ],
+    criminalServices: [
+      'Criminal Case Defence & Representation',
+      'Bail & Anticipatory Bail',
+      'FIR, Complaint & GD Assistance',
+      'Police Investigation & Remand Matters',
+      'Drug-Related Criminal Cases',
+      'Women & Children Repression Cases',
+      'Fraud, Theft & Assault Cases',
+      'Criminal Appeals & Revisions'
+    ],
     documentation: 'Legal Documentation & Drafting',
-    documentationServices: ['Legal Notice', 'Divorce Notice & Related Documents', 'Plaint & Written Statement', 'Bail Petition & Appeal Petition', 'Affidavit', 'Agreement & Deed Drafting', 'Power of Attorney', 'Compromise Petition & Settlement Deed'],
-    familyServicesDesc: 'Guidance and assistance for family-related legal matters, with attention to the circumstances and interests of those involved.',
-    documentationDesc: 'Preparation and drafting of legal notices, pleadings, petitions, affidavits, agreements and related legal instruments.',
+    documentationServices: [
+      'Legal Notice Drafting',
+      'Divorce & Talaq Notice',
+      'Plaint & Written Statement',
+      'Bail & Appeal Petitions',
+      'Affidavit & Declaration',
+      'Agreement & Contract Drafting',
+      'Deed Drafting & Review',
+      'Power of Attorney',
+      'Compromise & Settlement Deed',
+      'Property Document Verification'
+    ],
+    familyServicesDesc: 'Guidance and legal representation in family-related matters, addressing personal, marital, and family disputes with care and professionalism.',
+    documentationDesc: 'Professional preparation, drafting, and review of legal documents, notices, petitions, agreements, and other essential legal instruments.',
     criminalServicesTitle: 'Criminal Law',
+    criminalServicesDesc: 'Legal advice and representation in criminal matters, including criminal defence, bail applications, police-related matters, and court proceedings.',
     serviceEnquire: 'Enquire about this service',
     family: 'Family Law',
-    familyDesc: 'Legal guidance and assistance for family-related matters, approached with care, discretion and respect for the people involved.',
+    familyDesc: 'Guidance and legal representation in family-related matters, addressing personal, marital, and family disputes with care and professionalism.',
     criminal: 'Criminal Law',
-    criminalDesc: 'Legal assistance in criminal matters, with attention to the facts, applicable law and the procedural requirements of each case.',
+    criminalDesc: 'Legal advice and representation in criminal matters, including criminal defence, bail applications, police-related matters, and court proceedings.',
     consultation: 'Legal Consultation',
     consultationDesc: 'Professional legal consultation to help clarify legal questions, understand available options and identify appropriate next steps.',
     details: 'Enquire about this service',
@@ -131,18 +161,48 @@ const copy = {
     servicesEyebrow: 'আইন পেশার ক্ষেত্র',
     servicesTitle: 'আইনি সেবাসমূহ',
     servicesIntro: 'পারিবারিক বিষয়, ফৌজদারি আইন এবং আইনি নথি প্রস্তুত ও খসড়া প্রণয়ন-সংক্রান্ত সেবাগুলো সম্পর্কে জানুন। আপনার বিষয়ের বিবরণ ও প্রযোজ্য এখতিয়ার নিয়ে আলোচনা করতে যোগাযোগ করুন।',
-    familyServices: ['সন্তানের হেফাজত ও অভিভাবকত্ব', 'দাম্পত্য অধিকার পুনরুদ্ধার', 'পারিবারিক বিরোধ নিষ্পত্তি'],
-    criminalServicesNote: 'ফৌজদারি আইনের কোনো বিষয়ে মামলার ধরন ও প্রয়োজনীয় সহায়তা নিয়ে আলোচনা করতে সরাসরি যোগাযোগ করুন।',
+    familyServices: [
+      'Divorce & Separation',
+      'Dower (Denmohor) Claims',
+      'Maintenance & Alimony Claims',
+      'Child Custody & Guardianship',
+      'Domestic Violence & Dowry Matters',
+      'Restitution of Conjugal Rights',
+      'Family Dispute Resolution',
+      'Family Court Cases & Appeals'
+    ],
+    criminalServices: [
+      'Criminal Case Defence & Representation',
+      'Bail & Anticipatory Bail',
+      'FIR, Complaint & GD Assistance',
+      'Police Investigation & Remand Matters',
+      'Drug-Related Criminal Cases',
+      'Women & Children Repression Cases',
+      'Fraud, Theft & Assault Cases',
+      'Criminal Appeals & Revisions'
+    ],
     documentation: 'আইনি নথি প্রস্তুত ও খসড়া প্রণয়ন',
-    documentationServices: ['আইনি নোটিশ', 'বিবাহবিচ্ছেদের নোটিশ ও সংশ্লিষ্ট নথিপত্র', 'আরজি ও লিখিত জবাব', 'জামিন আবেদন ও আপিল আবেদন', 'হলফনামা', 'চুক্তিপত্র ও দলিল খসড়া', 'পাওয়ার অব অ্যাটর্নি', 'আপস আবেদন ও মীমাংসা দলিল'],
-    familyServicesDesc: 'সংশ্লিষ্ট ব্যক্তিদের পরিস্থিতি ও স্বার্থ বিবেচনায় পারিবারিক আইন-সংক্রান্ত বিষয়ে দিকনির্দেশনা ও সহায়তা।',
-    documentationDesc: 'আইনি নোটিশ, আরজি, আবেদন, হলফনামা, চুক্তিপত্র এবং সংশ্লিষ্ট আইনি দলিল প্রস্তুত ও খসড়া প্রণয়ন।',
+    documentationServices: [
+      'Legal Notice Drafting',
+      'Divorce & Talaq Notice',
+      'Plaint & Written Statement',
+      'Bail & Appeal Petitions',
+      'Affidavit & Declaration',
+      'Agreement & Contract Drafting',
+      'Deed Drafting & Review',
+      'Power of Attorney',
+      'Compromise & Settlement Deed',
+      'Property Document Verification'
+    ],
+    familyServicesDesc: 'পারিবারিক সম্পর্ক ও বিরোধ সংক্রান্ত বিষয়ে আইনি দিকনির্দেশনা ও প্রতিনিধিত্ব।',
+    documentationDesc: 'আইনি দলিল, নোটিশ, পিটিশন, চুক্তিপত্র এবং অন্যান্য প্রয়োজনীয় আইনি নথিপত্র পেশাদারভাবে প্রস্তুত, খসড়া প্রণয়ন ও পর্যালোচনা।',
     criminalServicesTitle: 'ফৌজদারি আইন',
+    criminalServicesDesc: 'ফৌজদারি মামলা, জামিন আবেদন, পুলিশ-সংক্রান্ত বিষয় এবং আদালত কার্যক্রমে আইনি পরামর্শ ও প্রতিনিধিত্ব।',
     serviceEnquire: 'এই সেবা সম্পর্কে জানতে যোগাযোগ করুন',
     family: 'পারিবারিক আইন',
-    familyDesc: 'পারিবারিক বিষয়ের আইনি দিকনির্দেশনা ও সহায়তা—যত্ন, গোপনীয়তা এবং সংশ্লিষ্ট ব্যক্তিদের প্রতি সম্মান বজায় রেখে।',
+    familyDesc: 'পারিবারিক সম্পর্ক ও বিরোধ সংক্রান্ত বিষয়ে আইনি দিকনির্দেশনা ও প্রতিনিধিত্ব।',
     criminal: 'ফৌজদারি আইন',
-    criminalDesc: 'ঘটনার তথ্য, প্রযোজ্য আইন এবং প্রতিটি মামলার প্রক্রিয়াগত বিষয় বিবেচনায় ফৌজদারি বিষয়ে আইনি সহায়তা।',
+    criminalDesc: 'ফৌজদারি মামলা, জামিন আবেদন, পুলিশ-সংক্রান্ত বিষয় এবং আদালত কার্যক্রমে আইনি পরামর্শ ও প্রতিনিধিত্ব।',
     consultation: 'আইনি পরামর্শ',
     consultationDesc: 'আইনি প্রশ্ন পরিষ্কার করা, উপলব্ধ বিকল্প বোঝা এবং পরবর্তী উপযুক্ত পদক্ষেপ নির্ধারণে পেশাগত পরামর্শ।',
     details: 'এই সেবা সম্পর্কে জানতে যোগাযোগ করুন',
@@ -379,8 +439,8 @@ function Services({t, go}) {
       id: 'criminal',
       icon: <Gavel />,
       title: t.criminalServicesTitle,
-      description: t.criminalServicesNote,
-      items: []
+      description: t.criminalServicesDesc,
+      items: t.criminalServices
     },
     {
       id: 'documentation',
@@ -406,18 +466,11 @@ function Services({t, go}) {
                 <div className="detailed-service-content">
                   <h2>{group.title}</h2>
                   <p>{group.description}</p>
-                  {group.items.length > 0 ? (
-                    <ul className="detailed-service-list">
-                      {group.items.map((item) => (
-                        <li key={item}><CheckCircle2 aria-hidden="true" /> <span>{item}</span></li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <div className="criminal-contact-note">
-                      <ShieldCheck aria-hidden="true" />
-                      <span>{t.criminalServicesNote}</span>
-                    </div>
-                  )}
+                  <ul className="detailed-service-list">
+                    {group.items.map((item) => (
+                      <li key={item}><CheckCircle2 aria-hidden="true" /> <span>{item}</span></li>
+                    ))}
+                  </ul>
                   <button className="button button-dark detailed-service-button" onClick={() => go('contact')}>
                     {t.serviceEnquire}<ArrowUpRight size={16}/>
                   </button>
