@@ -40,12 +40,12 @@ const copy = {
     servicesTitle: 'Legal services',
     servicesIntro: 'Explore the legal services available in family matters, criminal law and legal documentation. Contact the advocate to discuss the facts of your matter and the applicable jurisdiction.',
     familyServices: [
-      'Divorce & Separation',
-      'Dower (Denmohor) Claims',
-      'Maintenance & Alimony Claims',
+      'Marriage Contract & Nikah Registration',
+      'Divorce/Talaq & Separation Registration',
+      'Dower/Denmohor & Maintenance Claims',
+      'Restitution of Conjugal Rights',
       'Child Custody & Guardianship',
       'Domestic Violence & Dowry Matters',
-      'Restitution of Conjugal Rights',
       'Family Dispute Resolution',
       'Family Court Cases & Appeals'
     ],
@@ -162,13 +162,13 @@ const copy = {
     servicesTitle: 'আইনি সেবাসমূহ',
     servicesIntro: 'পারিবারিক বিষয়, ফৌজদারি আইন এবং আইনি নথি প্রস্তুত ও খসড়া প্রণয়ন-সংক্রান্ত সেবাগুলো সম্পর্কে জানুন। আপনার বিষয়ের বিবরণ ও প্রযোজ্য এখতিয়ার নিয়ে আলোচনা করতে যোগাযোগ করুন।',
     familyServices: [
-      'তালাক ও বিবাহবিচ্ছেদ (Divorce & Separation)',
-      'দেনমোহর আদায়ের দাবি (Dower Claims)',
-      'ভরণপোষণ ও খোরাকি দাবি (Maintenance Claims)',
-      'সন্তানের হেফাজত ও অভিভাবকত্ব (Child Custody)',
-      'পারিবারিক সহিংসতা ও যৌতুক সংক্রান্ত বিষয়',
+      'বিবাহ চুক্তি ও নিকাহ রেজিস্ট্রেশন',
+      'তালাক/বিবাহবিচ্ছেদ ও রেজিস্ট্রেশন',
+      'দেনমোহর ও ভরণপোষণ দাবি',
       'দাম্পত্য অধিকার পুনরুদ্ধার',
-      'পারিবারিক বিরোধ নিষ্পত্তি ও মধ্যস্থতা',
+      'সন্তানের হেফাজত ও অভিভাবকত্ব',
+      'পারিবারিক সহিংসতা ও যৌতুক সংক্রান্ত বিষয়',
+      'পারিবারিক বিরোধ নিষ্পত্তি',
       'পারিবারিক আদালত মামলা ও আপিল'
     ],
     criminalServices: [
